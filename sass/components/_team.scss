@@ -1,0 +1,105 @@
+.team {
+    background-color: $section-team;
+}
+
+.team__title {
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 1.2;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: $main-text;
+    padding-top: 94px;
+    padding-bottom: 50px;
+}
+
+.card__list {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-left: 0px;
+    padding: 0px 0px 94px 0px;
+    display: flex;
+    flex-direction: row;
+}
+
+.card__item {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+
+    &:nth-last-child(n+1) {
+        margin-left: 30px;
+    }
+    
+    &:first-child {
+        margin-left: 0px;
+    }
+}
+
+.card__img {
+    display: flex;
+    align-items: flex-start;
+    padding-bottom: 30px;
+}
+
+.card__content,
+.card__img {
+    background-color: #fff;
+}
+
+.card__name {
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.9;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: $main-text;
+    padding-bottom: 10px;
+}
+
+.card__text {
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 1.9;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: $link-text;
+    padding-bottom: 16px;
+}
+
+.social {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    padding-bottom: 30px;
+
+    &__item:nth-last-child(n+1) {
+        margin-right: 10px;
+    }
+}
+
+.social__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: #fff;
+    fill: $social-networks;
+
+    &--aim:hover {
+        fill: #fff;
+        background-color: $hover-text;
+        transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+}
