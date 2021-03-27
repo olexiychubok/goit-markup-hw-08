@@ -23,7 +23,15 @@ a {
 }
 
 .container {
-    width: 1200px;
     padding: 0 15px;
     margin: 0 auto;
+    width: 450px;
+
+    @media screen and (min-width: $tablet) {
+        width: 690px;
+    }
+
+    @media screen and (min-width: $desktop) {
+        width: 1170px;
+    }
 }

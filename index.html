@@ -29,9 +29,46 @@
                             <svg class="contact__img" width="10" height="16"><use href="./img/icons.svg#icon-smartphone-2"></use></svg>+38 096 111 11 11</a></li>
                 </ul>
             </div>
+            <button class="header-menu-button header-menu-button-fill js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+                <svg class="header-menu__img" width="40" height="40">
+                    <use href="./img/icons.svg#icon-head-menu-1"></use>
+                </svg>
+            </button>
         </div>
     </header>
     <main class="main">
+        <div class="menu-mobile-container js-menu-container" id="mobile-menu">
+            <button class="header-menu js-close-menu">
+                <svg class="header-menu__img" width="20" height="20">
+                    <use href="./img/icons.svg#icon-head-menu-1"></use>
+                </svg>
+            </button>
+            <ul class="menu-mobile-list">
+                <li class="mobile-list__item"><a class="mobile-list__link mobile-list__link--aim" href="index.html">Студия</a></li>
+                <li class="mobile-list__item"><a class="mobile-list__link mobile-list__link--aim" href="portfolio.html">Портфолио</a></li>
+                <li class="mobile-list__item"><a class="mobile-list__link mobile-list__link--aim" href="contact">Контакты</a></li>
+            </ul>
+            <ul class="contact-menu">
+                <li class="contact-menu__link">
+                    <a class="contact-menu__item contact-menu__item--aim" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                <li class="contact-menu__link">
+                    <a class="contact-menu__item contact-menu__item--aim" href="tel:+380961111111">+38 096 111 11 11</a></li>
+            </ul>
+            <ul class="social-menu">
+                <li class="social-menu__item">
+                    <a class="social-menu__link social-menu__link--aim" href="https://instagram.com/">Instagram</a>
+                </li>
+                <li class="social-menu__item">
+                    <a class="social-menu__link social-menu__link--aim" href="https://twitter.com/">Twitter</a>
+                </li>
+                <li class="social-menu__item">
+                    <a class="social-menu__link social-menu__link--aim" href="https://facebook.com/">Facebook</a>
+                </li>
+                <li class="social-menu__item">
+                    <a class="social-menu__link social-menu__link--aim" href="https://linkedin.com/">LinkedIn</a>
+                </li>
+            </ul>
+        </div>
         <div class="hero">
             <div class="container">
                 <section class="hero-section">
@@ -429,5 +466,12 @@
             </div>
         </div>
     </footer>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
 </body>
 </html>
