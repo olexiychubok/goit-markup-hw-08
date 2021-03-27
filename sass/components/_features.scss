@@ -18,7 +18,6 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: $main-text;
-    width: 420px;
 }
 
 .features__icon {
@@ -45,7 +44,9 @@
     letter-spacing: 0.03em;
     text-transform: none;
     color: $link-text;
-    display: inline ;
+    display: inline-block;
+    width: 450px;
+    height: 50px;
 }
 
 // .features__list {
