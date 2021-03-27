@@ -500,6 +500,7 @@ a {
   padding-left: 0px;
   margin-top: 0px;
   margin-bottom: 0px;
+  padding-bottom: 60px;
 }
 
 .customers__item {
@@ -532,6 +533,14 @@ a {
   border: 1px solid #afb1b8;
   border-radius: 4px;
   margin-bottom: 30px;
+}
+
+.customers__item:nth-child(5) {
+  margin-bottom: 0px;
+}
+
+.customers__item:nth-child(6) {
+  margin-bottom: 0px;
 }
 
 .customers__item--aim:hover {

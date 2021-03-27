@@ -19,6 +19,7 @@
     padding-left: 0px;
     margin-top: 0px;
     margin-bottom: 0px;
+    padding-bottom: 60px;
 }
 
 .customers__item {
@@ -38,10 +39,14 @@
     border-radius: 4px;
     margin-bottom: 30px;
 
-    // &:nth-child(2n) {
-    //     margin-bottom: 30px;
-    // }
+    &:nth-child(5){
+        margin-bottom: 0px;
+    }
     
+    &:nth-child(6){
+        margin-bottom: 0px;
+    }
+
     &--aim:hover {
         border: 1px solid $hover-text;
         border-radius: 4px;
