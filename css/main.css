@@ -126,7 +126,7 @@ summary {
 
 html,
 body {
-  max-width: 1600px;
+  max-width: auto;
   margin: auto;
 }
 
@@ -243,8 +243,6 @@ a {
   width: 480px;
   height: 400px;
   background-size: 480px 400px;
-  -o-object-fit: cover;
-     object-fit: cover;
 }
 
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
@@ -305,12 +303,9 @@ a {
 
 .features__list {
   margin: 0px;
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
   padding-left: 0px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
 }
 
 .features__item {
@@ -322,20 +317,11 @@ a {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #212121;
-  width: 270px;
-}
-
-.features__item:nth-last-child(n+1) {
-  margin-left: 30px;
-}
-
-.features__item:first-child {
-  margin-left: 0px;
+  width: 420px;
 }
 
 .features__icon {
   margin-bottom: 30px;
-  width: 270px;
   height: 120px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -350,6 +336,12 @@ a {
 }
 
 .features__subtitle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   padding-bottom: 10px;
 }
 
@@ -365,68 +357,8 @@ a {
   display: inline;
 }
 
-.doing__title {
-  font-family: Roboto, sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 36px;
-  line-height: 1.2;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: #212121;
-  padding-bottom: 50px;
-}
-
-.doing__list {
-  margin-top: 0px;
-  margin-bottom: 0px;
-  padding-bottom: 94px;
-  padding-left: 0px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.doing__img {
-  position: relative;
-}
-
-.doing__img:nth-last-child(n+1) {
-  margin-left: 30px;
-}
-
-.doing__img:first-child {
-  margin-left: 0px;
-}
-
-.doing__text {
-  font-family: Roboto, sans-serif;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.2;
-  text-align: center;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: white;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding-top: 27px;
-  padding-bottom: 27px;
-  background-color: rgba(47, 48, 58, 0.8);
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  left: 0;
+.doing {
+  display: none;
 }
 
 .team {
