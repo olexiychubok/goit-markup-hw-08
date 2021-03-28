@@ -2,6 +2,10 @@ html,
 body {
     max-width: 480px;
     margin: auto;
+
+    @media screen and (min-width:$tablet){
+        max-width: 768px;
+    }
 }
 
 h1,
