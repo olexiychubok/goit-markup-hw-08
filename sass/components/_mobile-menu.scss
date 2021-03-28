@@ -1,15 +1,125 @@
 .menu-mobile-container {
+    background-color: $second-text;
     position: fixed;
     top: 0;
     right: 0;
-    width: 100vw;
-    height: 100vw;
+    width: 480px;
+    height: 796px;
     transform: translateX(100%);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .menu-mobile-container.is-open {
     transform: translateX(0);
+}
+
+.header__button {
+    margin-left: auto;
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    width: 40px;
+    height: 40px;
+    border: 1px solid $second-text;
+    background-color: $second-text;
+    cursor: pointer;
+    outline: none;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header__x {
+    fill: rgba(0, 0, 0, 1);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    .header__button:hover & {
+        fill: $hover-text;
+    }
+}
+
+.menu-mobile-list {
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    margin-top: 48px;
+    margin-left: 40px;
+    padding: 0px;
+}
+
+.mobile-list__link {
+    display: block;
+    text-decoration: none;
+    margin-bottom: 32px;
+    color: $main-text;
+
+    &--aim:hover,
+    &--aim:focus {
+        color: $hover-text;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+}
+
+.menu-mobile__tel {
+    display: block;
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    margin-top: 302px;
+    margin-bottom: 32px;
+    margin-left: 40px;
+    color: $hover-text;
+}
+
+.menu-mobile__mail {
+    display: block;
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    margin-bottom: 64px;
+    margin-left: 40px;
+    color: $link-text;
+}
+
+.social-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0px;
+    margin-right: 83px;
+    margin-bottom: 48px;
+    margin-left: 40px;
+    padding-left: 0px;
+
+    &__item {
+        padding-right: 10px;
+        border-right: 1px solid $link-text;
+    }
+
+    &__item:last-child {
+        padding-right: 0px;
+        border-right: none;
+    }
+
+    &__link {
+        font-family: Roboto, sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 1.22;
+        letter-spacing: 0.02em;
+        color: $hover-text;
+    }
 }
 
 @media (min-width: 767px) {
