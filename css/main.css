@@ -1555,6 +1555,24 @@ a {
   }
 }
 
+@media (min-width: 1200px) {
+  .filter-list {
+    margin: 0px;
+    padding-bottom: 50px;
+    padding-top: 94px;
+    padding-left: 0px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .filter-list:nth-last-child(n+1) {
+    margin: 0px -8px;
+  }
+}
+
 .filter-list__item {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -1568,6 +1586,15 @@ a {
     margin-left: 8px;
   }
   .filter-list__item .filter-list__item:first-child {
+    margin-left: 0px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .filter-list__item {
+    margin-left: 8px;
+  }
+  .filter-list__item:first-child {
     margin-left: 0px;
   }
 }
@@ -1644,6 +1671,19 @@ a {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .project__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-top: -30px;
+    margin-left: -30px;
+    padding-bottom: 94px;
+  }
+}
+
 .project__item {
   margin-bottom: 30px;
   position: relative;
@@ -1664,6 +1704,17 @@ a {
   .project__item {
     -ms-flex-preferred-size: calc(100% / 2 - 30px);
         flex-basis: calc(100% / 2 - 30px);
+    margin-top: 30px;
+    margin-left: 30px;
+    position: relative;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .project__item {
+    margin: 0px;
+    -ms-flex-preferred-size: calc(100% / 3 - 30px);
+        flex-basis: calc(100% / 3 - 30px);
     margin-top: 30px;
     margin-left: 30px;
     position: relative;
@@ -1700,6 +1751,12 @@ a {
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .project-hover {
     height: 281px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .project-hover {
+    height: 294px;
   }
 }
 
@@ -1749,6 +1806,12 @@ a {
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .project-hover__text {
     height: 281px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .project-hover__text {
+    height: 294px;
   }
 }
 
