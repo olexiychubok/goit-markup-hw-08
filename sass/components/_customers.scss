@@ -29,7 +29,7 @@
     flex-basis: calc(100% / 2 - 40px);
     width: 210px;
 
-    @media screen and (min-width:$tablet) and (max-width: $desktop) {
+    @media screen and (min-width:$tablet) and (max-width: 1199px) {
         width: 226px;
         flex-basis: calc(100% / 3 - 30px);
         margin-left: 30px;
