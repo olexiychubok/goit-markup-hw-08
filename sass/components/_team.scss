@@ -39,7 +39,6 @@
     @media screen and (min-width:$tablet) and (max-width: $desktop) {
         flex-basis: calc(100% / 2 - 60px);
         margin-left: 30px;
-        // padding-top: 30px;
 
         &:nth-child(2n+1) {
             margin-left: 0px;
@@ -55,12 +54,6 @@
         width: 354px;
     }
 }
-
-// .card__img {
-//     display: flex;
-//     align-items: flex-start;
-//     padding-bottom: 30px;
-// }
 
 .card__content,
 .card__img {
