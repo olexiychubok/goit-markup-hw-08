@@ -1,23 +1,18 @@
-// .portfolio {
-//     background-color: $second-text;
-// }
+.portfolio {
+    background-color: $second-text;
+}
 
-// .portfolio__title {
-//     display: none;
-// }
+.portfolio__title {
+    display: none;
+}
 
-// .filter-list {
-//     margin: 0px;
-//     padding-bottom: 50px;
-//     padding-top: 94px;
-//     padding-left: 0px;
-//     display: flex;
-//     justify-content: center;
-
-//     &:nth-last-child(n+1) {
-//         margin: 0px -8px;
-//     }
-// }
+.filter-list {
+    width: 362px;
+    height: 91px;
+    display: flex;
+    padding-left: 0px;
+    margin: 0px;
+}
 
 // .filter-list__item {
 //     margin-left: 8px;

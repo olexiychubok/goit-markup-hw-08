@@ -169,6 +169,7 @@ a {
 
 .header {
   background-color: white;
+  border-bottom: 1px solid #ececec;
 }
 
 .container-header {
@@ -787,6 +788,24 @@ a {
 
 .newsletter__img {
   margin-left: 10px;
+}
+
+.portfolio {
+  background-color: white;
+}
+
+.portfolio__title {
+  display: none;
+}
+
+.filter-list {
+  width: 362px;
+  height: 91px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 0px;
+  margin: 0px;
 }
 
 .backdrop {
