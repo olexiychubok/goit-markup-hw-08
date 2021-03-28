@@ -9,6 +9,13 @@
             background-image: url(/img/hero/hero-img-m@2x.jpg);
         }
     }
+
+    @media screen and (min-width:$tablet) {
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/img/hero/hero-img.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 768px 400px;
+    }
 }
 
 .hero-section {
@@ -28,6 +35,12 @@
         display: inline-block;
         padding-top: 118px;
         padding-bottom: 30px;
+
+        @media screen and (min-width:$tablet) {
+            padding-right: 170px;
+            padding-left: 170px;
+        }
+
     }
     
     &__button {
