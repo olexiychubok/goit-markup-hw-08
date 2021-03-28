@@ -141,6 +141,7 @@ body {
   html,
   body {
     min-width: 1200px;
+    max-width: 1600px;
   }
 }
 
@@ -503,6 +504,7 @@ a {
 
 @media screen and (min-width: 1200px) {
   .hero {
+    background-color: #2f303a;
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(/img/hero/hero-img.jpg);
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/img/hero/hero-img.jpg);
     max-width: 1600px;
@@ -514,7 +516,7 @@ a {
 
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .hero .hero {
-    background-image: url(/img/hero/hero-img-m@2x.jpg);
+    background-image: url(/img/hero/hero-img@2x.jpg);
   }
 }
 
@@ -547,6 +549,7 @@ a {
 
 @media screen and (min-width: 1200px) {
   .hero-section__title {
+    font-size: 44px;
     padding-bottom: 30px;
     padding-left: 272px;
     padding-right: 272px;
@@ -612,6 +615,17 @@ a {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .features__list {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    padding-left: 0px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
 .features__item {
   font-family: Roboto, sans-serif;
   font-style: normal;
@@ -635,6 +649,18 @@ a {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .features__item {
+    width: 270px;
+  }
+  .features__item:nth-last-child(n+1) {
+    margin-left: 30px;
+  }
+  .features__item:first-child {
+    margin-left: 0px;
+  }
+}
+
 .features__icon {
   margin-bottom: 30px;
   height: 120px;
@@ -650,6 +676,12 @@ a {
   background-color: #f5f4fa;
 }
 
+@media screen and (min-width: 1200px) {
+  .features__icon {
+    width: 270px;
+  }
+}
+
 .features__subtitle {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -661,6 +693,12 @@ a {
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
+  .features__subtitle {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 1200px) {
   .features__subtitle {
     display: block;
   }
@@ -682,6 +720,12 @@ a {
   .features__text {
     width: 354px;
     height: 75px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .features__text {
+    display: inline;
   }
 }
 
