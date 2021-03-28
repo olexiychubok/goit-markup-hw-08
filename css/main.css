@@ -168,7 +168,7 @@ a {
   }
 }
 
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1200px) {
   .container {
     max-width: 1200px;
   }
@@ -191,7 +191,7 @@ a {
           align-items: center;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1200px) {
   .container-header {
     min-height: 80px;
   }
@@ -207,7 +207,7 @@ a {
   margin: 16px 0;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 1200px) {
   .logo {
     margin: 0;
   }
@@ -234,7 +234,7 @@ a {
   display: none;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1200px) {
   .nav-list {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -242,7 +242,7 @@ a {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1200px) {
   .nav-list__link--current {
     color: #2196f3;
     position: relative;
@@ -293,13 +293,13 @@ a {
   display: none;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1200px) {
   .contact {
     display: block;
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1200px) {
   .contact__link {
     margin-top: 21px;
     margin-bottom: 10px;
@@ -347,7 +347,7 @@ a {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1200px) {
   .header-menu-button {
     display: none;
   }
@@ -375,13 +375,19 @@ a {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1200px) {
   .hero {
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(/img/hero/hero-img.jpg);
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/img/hero/hero-img.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: 768px 400px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (max-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (max-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (max-width: 1200px) and (min-resolution: 2dppx) {
+  .hero .hero {
+    background-image: url(/img/hero/hero-img-m@2x.jpg);
   }
 }
 
@@ -405,7 +411,7 @@ a {
   padding-bottom: 30px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1200px) {
   .hero-section__title {
     padding-right: 170px;
     padding-left: 170px;
@@ -444,9 +450,25 @@ a {
 
 .features__list {
   margin: 0px;
-  padding-top: 60px;
+  padding-top: 30px;
   padding-bottom: 60px;
   padding-left: 0px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .features__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .features__item {
@@ -458,6 +480,18 @@ a {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #212121;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .features__item {
+    -ms-flex-preferred-size: calc(100% / 2 - 60px);
+        flex-basis: calc(100% / 2 - 60px);
+    margin-left: 30px;
+    padding-top: 30px;
+  }
+  .features__item:nth-child(2n+1) {
+    margin-left: 0px;
+  }
 }
 
 .features__icon {
@@ -485,6 +519,12 @@ a {
   padding-bottom: 10px;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .features__subtitle {
+    display: block;
+  }
+}
+
 .features__text {
   font-family: Roboto, sans-serif;
   font-style: normal;
@@ -495,8 +535,13 @@ a {
   text-transform: none;
   color: #757575;
   display: inline-block;
-  width: 450px;
-  height: 50px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .features__text {
+    width: 354px;
+    height: 75px;
+  }
 }
 
 .doing {
