@@ -13,6 +13,11 @@
     color: $main-text;
     padding-top: 60px;
     padding-bottom: 30px;
+
+    @media screen and (min-width:$desktop) {
+        padding-top: 94px;
+        padding-bottom: 50px;
+    }
 }
 
 .card__list {
@@ -26,6 +31,11 @@
         flex-wrap: wrap;
         align-items: center;
         justify-content: center;
+    }
+
+    @media screen and (min-width:$desktop) {
+        display: flex;
+        flex-direction: row;
     }
 }
 
@@ -44,6 +54,18 @@
             margin-left: 0px;
         }
     }
+
+    @media screen and (min-width:$desktop) {
+        margin-bottom: 0px;
+        
+        &:nth-last-child(n+1) {
+            margin-left: 30px;
+        }
+        
+        &:first-child {
+            margin-left: 0px;
+        }
+    }
 }
 
 .card__img {
@@ -52,6 +74,12 @@
 
     @media screen and (min-width:$tablet) and (max-width: 1199px) {
         width: 354px;
+    }
+
+    @media screen and (min-width:$desktop) {
+        display: flex;
+        align-items: flex-start;
+        padding-bottom: 30px;
     }
 }
 
@@ -71,6 +99,10 @@
     color: $main-text;
     padding-top: 30px;
     padding-bottom: 10px;
+
+    @media screen and (min-width:$desktop) {
+        padding-top: 0px;
+    }
 }
 
 .card__text {
@@ -107,4 +139,10 @@
     border-radius: 50%;
     background-color: #fff;
     fill: $social-networks;
+    
+    &--aim:hover {
+        fill: #fff;
+        background-color: $hover-text;
+        transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
 }
