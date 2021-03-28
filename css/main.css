@@ -1465,7 +1465,7 @@ a {
 
 .newsletter__input {
   padding: 0px;
-  width: 450px;
+  min-width: 320px;
   height: 50px;
   padding-left: 16px;
   background-color: #2f303a;
